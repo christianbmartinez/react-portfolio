@@ -26,7 +26,7 @@ const About = () => {
                   >
                     <img
                       alt='Christian B Martinez'
-                      src='me.webp'
+                      src='https://christianbmartinez.com/_next/image?url=https%3A%2F%2Fchristianbmartinez.com%2Fimg%2Fme.webp&w=640&q=75'
                       className='shadow-2xl rounded-full h-auto align-middle border-none absolute -m-[136px] -ml-20 lg:-ml-16'
                       style={{ maxWidth: '150px' }}
                       width={150}

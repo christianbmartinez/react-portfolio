@@ -80,7 +80,7 @@ const Header = ({ handlePageChange }) => {
             </li>
             <li className='p-4 font-medium hover:opacity-90 transition duration-150 ease-in-out'>
               <a
-                href='christians-resume.pdf'
+                href='https://christianbmartinez.com/christians-resume.pdf'
                 aria-label='Christian B Martinez | Resume Page'
               >
                 Resume
@@ -199,7 +199,7 @@ const Header = ({ handlePageChange }) => {
               >
                 <a
                   className=' transition duration-150 ease-in-out'
-                  href='christians-resume.pdf'
+                  href='https://christianbmartinez.com/christians-resume.pdf'
                   aria-label='Christian B Martinez | Resume Page'
                   onClick={() => {
                     handleNav()
