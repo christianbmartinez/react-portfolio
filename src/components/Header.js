@@ -51,7 +51,7 @@ const Header = ({ handlePageChange }) => {
             </a>
           </div>
           <ul className='hidden md:flex z-40'>
-            <li className='p-4 font-medium hover:text-teal-600 transition duration-150 ease-in-out'>
+            <li className='p-4 font-medium hover:opacity-90 transition duration-150 ease-in-out'>
               <a
                 href='#about'
                 onClick={() => handlePageChange('About')}
@@ -60,7 +60,7 @@ const Header = ({ handlePageChange }) => {
                 About
               </a>
             </li>
-            <li className='p-4 font-medium hover:text-teal-600 transition duration-150 ease-in-out'>
+            <li className='p-4 font-medium hover:opacity-90 transition duration-150 ease-in-out'>
               <a
                 href='#portfolio'
                 onClick={() => handlePageChange('Portfolio')}
@@ -69,7 +69,7 @@ const Header = ({ handlePageChange }) => {
                 Portfolio
               </a>
             </li>
-            <li className='p-4 font-medium hover:text-teal-600 transition duration-150 ease-in-out'>
+            <li className='p-4 font-medium hover:opacity-90 transition duration-150 ease-in-out'>
               <a
                 href='#contact'
                 onClick={() => handlePageChange('Contact')}
@@ -78,7 +78,7 @@ const Header = ({ handlePageChange }) => {
                 Contact
               </a>
             </li>
-            <li className='p-4 font-medium hover:text-teal-600 transition duration-150 ease-in-out'>
+            <li className='p-4 font-medium hover:opacity-90 transition duration-150 ease-in-out'>
               <a
                 href='/christians-resume.pdf'
                 aria-label='Christian B Martinez | Resume Page'
