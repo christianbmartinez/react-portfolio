@@ -28,7 +28,7 @@ const Header = ({ handlePageChange }) => {
   return (
     <>
       <nav>
-        <div className='flex justify-between items-center h-24 mx-auto px-4 text-zinc-800 bg-zinc-50 dark:text-zinc-50 dark:bg-slate-900 overflow-hidden'>
+        <div className='flex justify-between items-center h-24 mx-auto px-4 text-zinc-800 bg-white overflow-hidden'>
           <div className='z-40 flex flex-row items-center justify-center p-4'>
             <a
               href='#about'
@@ -80,8 +80,7 @@ const Header = ({ handlePageChange }) => {
             </li>
             <li className='p-4 font-medium hover:text-teal-600 transition duration-150 ease-in-out'>
               <a
-                href='#resume'
-                onClick={() => handlePageChange('Resume')}
+                href='/christians-resume.pdf'
                 aria-label='Christian B Martinez | Resume Page'
               >
                 Resume
@@ -107,8 +106,8 @@ const Header = ({ handlePageChange }) => {
           <ul
             className={
               nav
-                ? 'fixed z-40 flex flex-col justify-center items-center left-0 top-0 w-full h-screen bg-zinc-50 dark:bg-slate-900 ease-in-out duration-500'
-                : 'fixed z-40 flex flex-col justify-center items-center left-[-100%] top-0 w-full h-screen bg-zinc-50 dark:bg-slate-900 ease-in-out duration-500'
+                ? 'fixed z-40 flex flex-col justify-center items-center left-0 top-0 w-full h-screen bg-white ease-in-out duration-500'
+                : 'fixed z-40 flex flex-col justify-center items-center left-[-100%] top-0 w-full h-screen bg-white ease-in-out duration-500'
             }
           >
             <motion.li
@@ -200,10 +199,9 @@ const Header = ({ handlePageChange }) => {
               >
                 <a
                   className='dark:hover:text-teal-600 transition duration-150 ease-in-out'
-                  href='#resume'
+                  href='/christians-resume.pdf'
                   aria-label='Christian B Martinez | Resume Page'
                   onClick={() => {
-                    handlePageChange('Resume')
                     handleNav()
                   }}
                 >
