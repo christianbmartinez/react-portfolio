@@ -7,7 +7,7 @@ const About = () => {
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ type: 'spring', stiffness: 100, delay: 1 }}
+        transition={{ type: 'spring', stiffness: 100, delay: 0.5 }}
         className='flex flex-col justify-center items-center mt-52 pb-20 px-6 mx-auto lg:w-2/3'
       >
         <div className='flex flex-col min-w-0 min-h-[55vh] break-words shadow-2xl rounded-xl bg-white'>
