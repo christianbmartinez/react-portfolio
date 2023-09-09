@@ -1,25 +1,49 @@
+import { portfolioData } from '../../constants'
+import Project from '../Project'
+import { motion } from 'framer-motion'
+
 const Portfolio = () => {
   return (
-    <div className='py-12 px-12 min-h-[735px]'>
-      <h1 className='mb-12 text-5xl md:text-6xl font-extrabold leading-none tracking-tight text-zinc-900'>
-        Portfolio
-      </h1>
-      <p className='font-light text-zinc-800 text-xl'>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
-    </div>
+    <section>
+      <div className='w-full text-center'>
+        <h1 className='my-20 text-5xl md:text-6xl font-extrabold leading-none tracking-tight text-zinc-900'>
+          Portfolio
+        </h1>
+      </div>
+      <div className='pb-20 px-6 mx-auto max-w-screen-xl'>
+        <div className='grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3'>
+          {portfolioData.map((data, i) => {
+            return (
+              <motion.div
+                key={data.title}
+                initial={{
+                  opacity: 0,
+                  translateY: -100,
+                }}
+                whileInView={{ opacity: 1, translateY: 0 }}
+                transition={{
+                  type: 'spring',
+                  stiffness: 100,
+                  duration: 1.5,
+                  delay: 0.5 * data.id,
+                }}
+              >
+                <Project
+                  key={data.id}
+                  title={data.title}
+                  imageUrl={data.imgUrl}
+                  alt={data.alt}
+                  description={data.description}
+                  repo={data.repo}
+                  href={data.href}
+                  tags={data.tags}
+                />
+              </motion.div>
+            )
+          })}
+        </div>
+      </div>
+    </section>
   )
 }
 

@@ -105,6 +105,7 @@ const portfolioData = [
     repo: 'https://github.com/christianbmartinez/cbm_2022',
     href: 'https://preeminent-raindrop-7e0d9e.netlify.app/',
     tags: ['#REACT', '#BOOTSTRAP'],
+    id: 1,
   },
   {
     title: 'Colorfill App',
@@ -116,6 +117,7 @@ const portfolioData = [
     repo: 'https://github.com/christianbmartinez/colorfill',
     href: 'https://codepen.io/_coderchris/pen/KKgyywR',
     tags: ['#CSS VARIABLES', '#JS'],
+    id: 2,
   },
   {
     title: 'Full Stack Blog',
@@ -126,6 +128,7 @@ const portfolioData = [
     repo: 'https://github.com/christianbmartinez/tech-blog',
     href: 'https://guarded-ocean-61686-3600ffdf6cf0.herokuapp.com/',
     tags: ['#EXPRESS', '#HANDLEBARS'],
+    id: 3,
   },
   {
     title: 'Consulting Site',
@@ -137,6 +140,7 @@ const portfolioData = [
     repo: 'https://github.com/christianbmartinez/mmbc',
     href: 'https://www.mmbc.llc/',
     tags: ['#TAILWIND', '#REACT'],
+    id: 4,
   },
   {
     title: 'Chattr App',
@@ -148,6 +152,7 @@ const portfolioData = [
     repo: 'https://github.com/christianbmartinez/chattrapp',
     href: 'https://chattrapp.netlify.app/',
     tags: ['#EXPRESS', '#SOCKETIO'],
+    id: 5,
   },
   {
     title: 'Mysteryboard',
@@ -159,6 +164,7 @@ const portfolioData = [
     repo: 'https://github.com/christianbmartinez/mysteryboard',
     href: 'https://mysteryboard.herokuapp.com/',
     tags: ['#EXPRESS', '#MONGODB'],
+    id: 6,
   },
 ]
 

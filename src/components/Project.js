@@ -10,9 +10,9 @@ const Project = ({ title, imageUrl, alt, description, repo, href, tags }) => {
         }}
         alt={alt}
       >
-        <div className='w-full h-full flex justify-center items-center bg-gradient-to-r from-teal-600 to-pink-500 opacity-60'></div>
+        <div className='w-full h-full flex justify-center items-center bg-gradient-to-r from-teal-50 to-teal-600 opacity-70'></div>
       </div>
-      <div className='flex flex-col rounded-lg justify-center w-full h-full hover:shadow-2xl bg-gradient-to-r from-teal-600 to-pink-500 opacity-60 transition duration-300 ease-in-out hover:opacity-90'></div>
+      <div className='flex flex-col rounded-lg justify-center w-full h-full hover:shadow-2xl bg-gradient-to-r from-teal-50 to-teal-600 opacity-60 transition duration-300 ease-in-out hover:opacity-90'></div>
       <div className='px-6 py-4 h-20'>
         <div className='font-bold text-xl mb-2 text-zinc-900'>{title}</div>
         <p className='text-zinc-800 text-base'>{description}</p>
@@ -30,7 +30,7 @@ const Project = ({ title, imageUrl, alt, description, repo, href, tags }) => {
         })}
       </div>
       <div className='inline-flex px-6 pt-4 pb-3'>
-        <p className='text-zinc-800 text-base my-2'>Project as:</p>
+        <p className='text-zinc-800 text-base my-2'>Project links:</p>
         <a
           href={repo}
           target='_blank'
