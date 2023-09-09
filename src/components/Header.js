@@ -28,7 +28,7 @@ const Header = ({ handlePageChange }) => {
   return (
     <>
       <nav>
-        <div className='flex justify-between items-center h-24 mx-auto px-4 text-zinc-800 bg-white overflow-hidden'>
+        <div className='flex justify-between items-center h-24 mx-auto px-4 text-white bg-teal-500 overflow-hidden'>
           <div className='z-40 flex flex-row items-center justify-center p-4'>
             <a
               href='#about'
@@ -106,8 +106,8 @@ const Header = ({ handlePageChange }) => {
           <ul
             className={
               nav
-                ? 'fixed z-40 flex flex-col justify-center items-center left-0 top-0 w-full h-screen bg-white ease-in-out duration-500'
-                : 'fixed z-40 flex flex-col justify-center items-center left-[-100%] top-0 w-full h-screen bg-white ease-in-out duration-500'
+                ? 'fixed z-40 flex flex-col justify-center items-center left-0 top-0 w-full h-screen bg-teal-500 ease-in-out duration-500'
+                : 'fixed z-40 flex flex-col justify-center items-center left-[-100%] top-0 w-full h-screen bg-teal-500 ease-in-out duration-500'
             }
           >
             <motion.li
@@ -138,13 +138,13 @@ const Header = ({ handlePageChange }) => {
                 </svg>
               </a>
             </motion.li>
-            <li className='text-zinc-900 dark:text-zinc-200 text-2xl hover:text-teal-600 w-full text-center p-4'>
+            <li className='text-white text-2xl hover:opacity-90 w-full text-center p-4'>
               <motion.div
                 animate={nav ? 'open' : 'closed'}
                 variants={secondVariant}
               >
                 <a
-                  className='dark:hover:text-teal-600 transition duration-150 ease-in-out'
+                  className='transition duration-150 ease-in-out'
                   href='#about'
                   aria-label='Christian B Martinez | About Page'
                   onClick={() => {
@@ -156,13 +156,13 @@ const Header = ({ handlePageChange }) => {
                 </a>
               </motion.div>
             </li>
-            <li className='text-zinc-900 dark:text-zinc-200 text-2xl hover:text-teal-600 w-full text-center p-4'>
+            <li className='text-white text-2xl hover:opacity-90 w-full text-center p-4'>
               <motion.div
                 animate={nav ? 'open' : 'closed'}
                 variants={thirdVariant}
               >
                 <a
-                  className='dark:hover:text-teal-600 transition duration-150 ease-in-out'
+                  className=' transition duration-150 ease-in-out'
                   href='#portfolio'
                   aria-label='Christian B Martinez | About Page'
                   onClick={() => {
@@ -174,13 +174,13 @@ const Header = ({ handlePageChange }) => {
                 </a>
               </motion.div>
             </li>
-            <li className='text-zinc-900 dark:text-zinc-200 text-2xl hover:text-teal-600 w-full text-center p-4'>
+            <li className='text-white text-2xl hover:opacity-90 w-full text-center p-4'>
               <motion.div
                 animate={nav ? 'open' : 'closed'}
                 variants={fourthVariant}
               >
                 <a
-                  className='dark:hover:text-teal-600 transition duration-150 ease-in-out'
+                  className='transition duration-150 ease-in-out'
                   href='#contact'
                   aria-label='Christian B Martinez | Contact Page'
                   onClick={() => {
@@ -192,13 +192,13 @@ const Header = ({ handlePageChange }) => {
                 </a>
               </motion.div>
             </li>
-            <li className='text-zinc-900 dark:text-zinc-200 text-2xl hover:text-teal-600 w-full text-center p-4'>
+            <li className='text-white text-2xl hover:opacity-90 w-full text-center p-4'>
               <motion.div
                 animate={nav ? 'open' : 'closed'}
                 variants={fifthVariant}
               >
                 <a
-                  className='dark:hover:text-teal-600 transition duration-150 ease-in-out'
+                  className=' transition duration-150 ease-in-out'
                   href='/christians-resume.pdf'
                   aria-label='Christian B Martinez | Resume Page'
                   onClick={() => {

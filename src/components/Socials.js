@@ -9,8 +9,8 @@ import {
 
 const Socials = () => {
   return (
-    <ul className='inline-flex text-teal-600'>
-      <li className='px-5 text-teal-600 hover:text-teal-500 transition duration-150 ease-in-out'>
+    <ul className='inline-flex'>
+      <li className='px-5 text-white hover:opacity-90 transition duration-150 ease-in-out'>
         <a
           href={socialLinks.github}
           target='_blank'
@@ -20,7 +20,7 @@ const Socials = () => {
           <FaGithub />
         </a>
       </li>
-      <li className='px-5 text-teal-600 hover:text-teal-500 transition duration-150 ease-in-out'>
+      <li className='px-5 text-white hover:opacity-90 transition duration-150 ease-in-out'>
         <a
           href={socialLinks.codepen}
           target='_blank'
@@ -30,7 +30,7 @@ const Socials = () => {
           <FaCodepen />
         </a>
       </li>
-      <li className='px-5 text-teal-600 hover:text-teal-500 transition duration-150 ease-in-out'>
+      <li className='px-5 text-white hover:opacity-90 transition duration-150 ease-in-out'>
         <a
           href={socialLinks.tiktok}
           target='_blank'
@@ -40,7 +40,7 @@ const Socials = () => {
           <FaTiktok />
         </a>
       </li>
-      <li className='px-5 text-teal-600 hover:text-teal-500 transition duration-150 ease-in-out'>
+      <li className='px-5 text-white hover:opacity-90 transition duration-150 ease-in-out'>
         <a
           href={socialLinks.twitter}
           target='_blank'
@@ -50,7 +50,7 @@ const Socials = () => {
           <FaTwitter />
         </a>
       </li>
-      <li className='px-5 text-teal-600 hover:text-teal-500 transition duration-150 ease-in-out'>
+      <li className='px-5 text-white hover:opacity-90 transition duration-150 ease-in-out'>
         <a
           href={socialLinks.linkedin}
           target='_blank'
